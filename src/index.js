@@ -1,4 +1,10 @@
+// Importando os componentes para a página App
+
 import { createRoot } from "react-dom/client";
+import Titulo from "./components/Titulo";
+import SubTitulo from "./components/SubTitulo";
+import Mensagem from "./components/Mensagem";
+
 
 const rootElement = document.getElementById("root");
 
@@ -7,8 +13,6 @@ const root = createRoot(rootElement);
 root.render("Hello World!");
 
 let nome = "Batata";
-
-
 
 // JSX = Mescla do HTML com Javascript
 
@@ -26,3 +30,13 @@ root.render( // Se não colocar uma tag section não é possível colocar vária
     </section>
 
 ); // Como a variável root foi chamada 2 vezes, o JSX lê a alteração mais atual
+
+// Componentes
+
+root.render(
+    <div>
+        <Titulo />
+        <SubTitulo />
+        <Mensagem />
+    </div>
+);
