@@ -7,11 +7,13 @@ body {
 
 img {
     border: 1px solid #1d1919;
-    padding: 20px;
-    width: 400px;
+    width: 350px;
     border-radius: 5px;
     box-shadow: 2px 2px 12px black;
-    background-color: crimson;
+    background-color: #a4a4a4;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
 }
 
 .titulo {
@@ -22,5 +24,26 @@ img {
     background-color: #a4a4a4;
     color: #fff;
     padding: 20px;
-    border: 10px solid lime;
+}
+
+.postagem {
+    border: 1px solid #1d1919;
+    padding: 20px;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 12px black;
+    background-color: #dfdfdf;
+    margin: 32px auto;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer {
+    padding: 10px;
+    font-size: 16px;
+    color: #1d1919;
+    background-color: #dfdfdf;
 }

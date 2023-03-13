@@ -1,3 +1,10 @@
 export default function Titulo () { // Componentes começam com a letra maiúscula
-    return "Olá, Sr. Batata"
+
+    const nomeAutor = "Batata";
+
+    return (
+        <section>
+            <p className="autor">Autor: { nomeAutor }</p>
+        </section>
+    );
 }

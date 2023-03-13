@@ -4,6 +4,9 @@ import { createRoot } from "react-dom/client";
 import Titulo from "./components/Titulo";
 import SubTitulo from "./components/SubTitulo";
 import Mensagem from "./components/Mensagem";
+import Postagem from "./components/Postagem";
+import Blog from "./components/Blog";
+import Footer from "./components/Footer";
 import "./styles.css";
 
 
@@ -36,8 +39,8 @@ root.render( // Se não colocar uma tag section não é possível colocar vária
 
 root.render(
     <div>
-        <Titulo />
-        <SubTitulo />
-        <Mensagem />
+        <h1>Exercício de Fixação</h1>
+        <Blog />
+        <Footer />
     </div>
 );
