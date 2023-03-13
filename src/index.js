@@ -4,6 +4,7 @@ import { createRoot } from "react-dom/client";
 import Titulo from "./components/Titulo";
 import SubTitulo from "./components/SubTitulo";
 import Mensagem from "./components/Mensagem";
+import "./styles.css";
 
 
 const rootElement = document.getElementById("root");
