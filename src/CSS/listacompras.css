@@ -1,0 +1,9 @@
+.card-compra {
+    border: 1px solid black;
+    margin: 8px 0 0 12px;
+    border-radius: 17px;
+    padding: 8px;
+    width: 280px;
+    display: inline-block;
+    background-color: rgba(248, 208, 156, 0.418);
+}

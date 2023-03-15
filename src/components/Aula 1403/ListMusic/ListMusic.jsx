@@ -1,11 +1,11 @@
-import { Music } from "../Music/Music";
-import "./ListMusic.css";
+import Music from "../../Aula 1403/Musics/Music";
+import "../../../CSS/listmusic.css";
 
-import imageMusic1 from "../../assets/images/1.png";
-import imageMusic2 from "../../assets/images/2.png";
-import imageMusic3 from "../../assets/images/3.png";
+import imageMusic1 from "../../../assets/images/1.png";
+import imageMusic2 from "../../../assets/images/2.png";
+import imageMusic3 from "../../../assets/images/3.png";
 
-export function ListMusic() {
+export default function ListMusic() {
     return (
         // fragment
         <>

@@ -12,7 +12,7 @@ Crie um componente Postagem que possui:
 
 */
 
-import { Titulo } from "../Título/Titulo"
+import Titulo from "../Título/Titulo"
 
 /*
 
@@ -37,7 +37,7 @@ export default function Postagem () {
 
 */
 
-export function Postagem() {
+export default function Postagem() {
     return (
         <section>
         <Titulo></Titulo>

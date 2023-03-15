@@ -1,7 +1,7 @@
 import "./Titulo.css";
 // Titulo é o nome do componente
 // Componente de função
-export function Titulo(props) {
+export default function Titulo (props) {
   // children -> Propriedade padrão do props. Representa o texto dentro da tag
     const textoTitulo = props.children;
 

@@ -1,3 +1,5 @@
+
+
 // Importando os componentes para a página App
 
 import { createRoot } from "react-dom/client";
@@ -8,10 +10,12 @@ import Postagem from "./components/Aula 1303/Postagem/Postagem";
 import Blog from "./components/Aula 1303/Blog/Blog";
 import Footer from "./components/Aula 1303/Footer/Footer";
 
+import ListMusic from "./components/Aula 1403/ListMusic/ListMusic.jsx";
 import Musics from "./components/Aula 1403/Musics/Music";
 import Task from "./components/Aula 1403/Tasks/Tasks.jsx";
 
 import ProductList from "./components/Aula 1403/Exercício/ProductList";
+import App from "./app";
 
 // Importações CSS
 import "./CSS/styles.css";
@@ -65,6 +69,8 @@ root.render( /*
         <ProductList />
     </div>
 */
+
+/*
         <div>
         {/* <Titulo></Titulo>
         <Mensagem></Mensagem>
@@ -73,7 +79,10 @@ root.render( /*
         <hr />
         <Blog></Blog>
         <hr/>
-        <Footer></Footer> */}
+        <Footer></Footer> } */
+
+        
+/*
         <Titulo corBorda="#FF0000" corFundo="#FF000022">Musicas</Titulo>
         <ListMusic />
     
@@ -86,4 +95,8 @@ root.render( /*
             React é uma biblioteca para criação de interfaces visuais web.
         </Titulo>
         </div>
-    );
+    
+*/ 
+        <App />
+);
+
