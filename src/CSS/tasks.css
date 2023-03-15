@@ -1,0 +1,27 @@
+.task {
+    margin: 20px 0px 20px 22px;
+    width: 200px;
+    padding: 20px;
+    border: 2px solid #1d1919;
+    display: inline-block;
+}
+
+.task .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task .status {
+    color: blue;
+    font-size: 18px;
+}
+
+.task .deadline {
+    color: red;
+    font-size: 18px;
+}
+
+strong {
+    font-size: 22px;
+}

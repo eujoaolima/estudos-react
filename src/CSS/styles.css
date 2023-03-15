@@ -47,3 +47,24 @@ img {
     color: #1d1919;
     background-color: #dfdfdf;
 }
+
+.titulo {
+    color: brown;
+}
+
+.paragrafo {
+    font-style: italic;
+}
+
+.mensagem {
+    background-color: whitesmoke;
+    padding: 8px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    width: 300px;
+    margin: 8px auto;
+}
+
+h1 {
+    text-align: center;
+}
