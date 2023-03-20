@@ -1,6 +1,6 @@
 // 1) Montar uma calculadora de IMC (campo peso e campo altura), mostrar o resultado do cálculo abaixo dos campos ao clicar em calcular.
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./desafio1.css";
 
 export default function Calculadora() {
@@ -10,30 +10,16 @@ export default function Calculadora() {
 
     // FORMULA IMC = peso / altura²
 
-    function obterPeso (e) {
-        const input = e.target;
-        const valor = input.value;
-        setPeso(valor);
-    }
-
-    function obterAltura (e) {
-        const input = e.target;
-        const valor = input.value;
-        setAltura(valor);
-    }
-
-    function calcImc () {
-        const valor = peso / altura ** 2;
-        setImc(valor.toFixed(2));
-    }
+    useEffect(() => {
+        const resultadoIMC = Number(peso) / Number(altura) ** 2;
+        setImc(resultadoIMC.toFixed(2));
+    }, [peso, altura]);
     
     return (
         <>
             <div>
-                <input type="text" placeholder="Digite sua altura" onChange={obterAltura}></input>
-                <input type="text" placeholder="Digite seu peso (Kg)" onChange={obterPeso}></input>
-                <br />
-                <button onClick={calcImc}>Calcular</button>
+                <input type="text" placeholder="Digite seu peso (Kg)" onChange={(e) => {setPeso(e.target.value)}}></input>
+                <input type="text" placeholder="Digite sua altura" onChange={(e) => {setAltura(e.target.value)}}></input>
                 <br />
                 <strong>Seu peso é: {peso} kg</strong>
                 <br />
@@ -44,3 +30,70 @@ export default function Calculadora() {
         </>
     );
 }
+
+/*
+
+Forma do professor Almir:
+
+import { useEffect, useState } from "react";
+import "./Desafio1.css";
+
+
+export function Desafio1() {
+  const [peso, setPeso] = useState(0);
+  const [altura, setAltura] = useState(0);
+  // -1 indica que não houve calculo
+  const [imc, setImc] = useState(-1);
+
+
+  useEffect(() => {
+    const resultado = peso / (altura * altura);
+    setImc(resultado);
+  }, [peso, altura]);
+
+
+  // function calcularImc() {
+  //   const resultado = peso / (altura * altura);
+  //   setImc(resultado);
+  // }
+
+
+  function limpar() {
+    setPeso(0);
+    setAltura(0);
+    setImc(-1);
+  }
+
+
+  return (
+    <div>
+      <h3>Calculadora de IMC</h3>
+      <input
+        type="number"
+        placeholder="Digite o peso"
+        onChange={(evento) => setPeso(evento.target.value)}
+        value={peso}
+      />
+      <input
+        type="number"
+        placeholder="Digite a altura"
+        onChange={(evento) => setAltura(evento.target.value)}
+        value={altura}
+      />
+      <br />
+      // <button onClick={calcularImc}>Calcular</button>
+      <button onClick={limpar}>Limpar</button>
+      <hr />
+      {(imc !== Infinity && !isNaN(imc)) && <p>O seu IMC é: {imc.toFixed(2)}</p>}
+    </div>
+  );
+}
+
+// Capturando dados do input
+
+
+// - onChange
+// - Função para coletar o valor
+// - Estado pra armazenar
+
+*/

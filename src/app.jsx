@@ -11,8 +11,14 @@ import ListFruits from "./components/Aula 1603/ListaFrutas/ListFruits";
 import Sorteio from "./components/Aula 1703/Sorteio/Sorteio";
 import Abas from "./components/Aula 1703/Abas/Abas";
 import Quiz from "./components/Aula 1703/QuestãoQuiz/QuestaoQuiz";
+
 import Calculadora from "./components/Aula 1703/Desafios/Desafio1";
 import Caroussel from "./components/Aula 1703/Desafios/Desafio2";
+import Desafio3 from "./components/Aula 1703/Desafios/Desafio3";
+import ConveterTemperatura from "./components/Aula 2003/ConversorDeTemperatura/ConversorTemp";
+import ConversorMedidas from "./components/Aula 2003/Exercícios/ConversorDeUnidadeDeMedida/ConversorMedidas";
+import Dicionario from "./components/Aula 2003/Dicionario/Dicionario";
+import CalculadoraPorcentagem from "./components/Aula 2003/Exercícios/Calculadora/Calculadora";
 
 
 export default function App () {
@@ -37,9 +43,26 @@ export default function App () {
 
             {/* <Abas /> */}
             {/* <Quiz /> */}
-            {/* <Calculadora /> */}
+            
+            {/* Desafios */}
+            <Calculadora />
             <hr />
-            <Caroussel />
+            {/* <Caroussel />
+            <hr />
+            <Desafio3 />
+            <hr /> */}
+
+            {/* <ConveterTemperatura />
+
+            <hr />
+
+            <ConversorMedidas />
+
+            <hr />
+
+            <Dicionario /> */}
+
+            <CalculadoraPorcentagem />
         </>
     );
 }

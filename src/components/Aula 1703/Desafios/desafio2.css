@@ -1,0 +1,32 @@
+.carrossel img {
+    width: 250px;
+    height: 256px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.carrossel p {
+    margin: 0;
+    text-align: center;
+    font-size: 28px;
+    font-style: italic;
+}
+
+.controles {
+    display: flex;
+    justify-content: space-around;
+}
+
+.controles button {
+    background-color: violet;
+    border: 0;
+    padding: 8px 24px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+}
