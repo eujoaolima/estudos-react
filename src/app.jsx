@@ -9,6 +9,10 @@ import Contador from "./components/Aula 1603/Contador/Contador";
 import Cadastro from "./components/Aula 1603/Cadastro/cadastro";
 import ListFruits from "./components/Aula 1603/ListaFrutas/ListFruits";
 import Sorteio from "./components/Aula 1703/Sorteio/Sorteio";
+import Abas from "./components/Aula 1703/Abas/Abas";
+import Quiz from "./components/Aula 1703/QuestãoQuiz/QuestaoQuiz";
+import Calculadora from "./components/Aula 1703/Desafios/Desafio1";
+import Caroussel from "./components/Aula 1703/Desafios/Desafio2";
 
 
 export default function App () {
@@ -28,8 +32,14 @@ export default function App () {
             {/* <Contador />
             <Cadastro /> */}
 
-            <Sorteio />
+            {/* <Sorteio /> */}
             {/* <ListFruits /> */}
+
+            {/* <Abas /> */}
+            {/* <Quiz /> */}
+            {/* <Calculadora /> */}
+            <hr />
+            <Caroussel />
         </>
     );
 }

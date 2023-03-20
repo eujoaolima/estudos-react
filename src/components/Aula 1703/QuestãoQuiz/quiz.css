@@ -1,0 +1,24 @@
+h3 {
+    font-size: 30px;
+    padding: 10px;
+}
+
+p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.alternativa {
+    cursor: pointer;
+    font-style: italic;
+    font-size: 23px;
+    margin-left: 32px;
+}
+
+button {
+    margin-left: 32px;
+    padding: 10px;
+    font-size: 22px;
+    border-radius: 50px;
+    cursor: pointer;
+}

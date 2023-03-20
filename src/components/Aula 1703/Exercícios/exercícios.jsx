@@ -7,4 +7,9 @@ número aleatório. Use o esquema Math.floor(Math.random() * 100).
 
 TEMPO: 20 min
 
+2) Ao errar deve haver um botão que permite ao usuário voltar para responder novamente a pergunta (Tentar novamente). 
+	- Devemos reduzir o número de tentativas dele toda vez que tentar novamente. 
+	- Caso o número de tentativas chegue a zero mostrar na tela "Tentativas esgotadas"
+
+TEMPO = 30 min
 */
